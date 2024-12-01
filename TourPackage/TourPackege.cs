@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Main 
 {
     
-    internal class TourPackage
+    public class TourPackage
     {
         private int id;
         private int price;

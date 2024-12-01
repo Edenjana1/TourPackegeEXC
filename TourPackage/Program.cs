@@ -1,14 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Main;
 
-internal class Program
+public class Program
 {
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
 
-     // TourPackage[] packeges = new TourPackage[3];
-    // packeges[0] = TourPackage(1, 20, 30, 15);
+        TourPackage[] packeges = new TourPackage[3];
+        packeges[0] = new TourPackage(1, 20, 30, 15);
+        packeges[1] = new TourPackage(2, 40, 60, 30);
+        packeges[2] = new TourPackage(3, 60, 90, 45);
+
+        Console.WriteLine("the amount of packeges with extra : "+ Calculate(packeges));
+        Console.WriteLine("the users with extra : " + Costumers( packeges));
+
 
 
     }
